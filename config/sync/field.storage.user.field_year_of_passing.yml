@@ -1,0 +1,20 @@
+uuid: c054c7ad-e711-4894-b6a2-2eadbb7fa8bf
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_year_of_passing
+field_name: field_year_of_passing
+entity_type: user
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

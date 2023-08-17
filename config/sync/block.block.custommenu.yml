@@ -1,0 +1,33 @@
+uuid: 7ea01fed-2bdf-49f0-adcf-2f22b53ccdbf
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.custom-menu
+  module:
+    - system
+    - user
+  theme:
+    - olivero
+id: custommenu
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: 'system_menu_block:custom-menu'
+settings:
+  id: 'system_menu_block:custom-menu'
+  label: 'Custom Menu'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      academic_head: academic_head
