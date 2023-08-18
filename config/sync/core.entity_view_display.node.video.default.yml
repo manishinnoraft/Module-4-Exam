@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.video.body
     - field.field.node.video.field_stream_name
+    - field.field.node.video.field_subject_video
     - field.field.node.video.field_video_file
     - node.type.video
   module:
@@ -30,6 +31,14 @@ content:
       link: true
     third_party_settings: {  }
     weight: 103
+    region: content
+  field_subject_video:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
     region: content
   field_video_file:
     type: file_default

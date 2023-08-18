@@ -22,13 +22,17 @@
         "drupal/core-project-message": "^10.0",
         "drupal/core-recommended": "^10.0",
         "drupal/devel": "^5.1",
+        "drupal/email_login_otp": "^1.1",
         "drupal/mailsystem": "^4.4",
         "drupal/miniorange_2fa": "^5.1",
+        "drupal/otp": "^1.0@beta",
         "drupal/permissions_by_term": "^3.1",
         "drupal/phone_number": "^2.0@alpha",
         "drupal/phpmailer_smtp": "^2.2",
+        "drupal/purge_users": "^4.0@beta",
         "drupal/smtp": "^1.2",
         "drupal/tac_lite": "^1.7",
+        "drupal/user_expire": "^1.1",
         "drush/drush": "^12.1"
     },
     "require-dev": {

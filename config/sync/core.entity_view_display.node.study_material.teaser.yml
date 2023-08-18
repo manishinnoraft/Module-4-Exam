@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.study_material.body
     - field.field.node.study_material.field_stream_name_1
+    - field.field.node.study_material.field_subject
     - node.type.study_material
   module:
     - text
@@ -30,3 +31,4 @@ content:
     region: content
 hidden:
   field_stream_name_1: true
+  field_subject: true

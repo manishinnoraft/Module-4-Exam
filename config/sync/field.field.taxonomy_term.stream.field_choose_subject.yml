@@ -1,0 +1,29 @@
+uuid: c26f966b-0cc0-495e-9664-61bc64a12f63
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_choose_subject
+    - taxonomy.vocabulary.stream
+    - taxonomy.vocabulary.subject
+id: taxonomy_term.stream.field_choose_subject
+field_name: field_choose_subject
+entity_type: taxonomy_term
+bundle: stream
+label: 'Choose Subject'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      subject: subject
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

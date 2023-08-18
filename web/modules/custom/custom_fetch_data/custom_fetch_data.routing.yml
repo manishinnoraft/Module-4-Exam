@@ -1,0 +1,6 @@
+custom_fetch_data.dashboard:
+  path: '/event-dashboard'
+  defaults:
+    _controller: '\Drupal\custom_fetch_data\Controller\EventDashboardController::dashboard'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,17 @@
+<?php 
+
+/**
+ * Implements hook_theme().
+ */
+function custom_data_theme($existing, $type, $theme, $path) {
+  return [
+    'custom_dashboard' => [
+      'variables' => [
+        'joining_date_data' => [],
+        'passing_year_data' => [],
+        'display_name_data' => [],
+      ],
+      'template' => 'custom-dashboard',
+    ],
+  ];
+}

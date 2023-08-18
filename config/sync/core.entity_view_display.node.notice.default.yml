@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.notice.body
+    - field.field.node.notice.field_notice_body
     - node.type.notice
   module:
     - text
@@ -13,12 +13,12 @@ targetEntityType: node
 bundle: notice
 mode: default
 content:
-  body:
+  field_notice_body:
     type: text_default
-    label: hidden
+    label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 101
+    weight: 102
     region: content
   links:
     settings: {  }

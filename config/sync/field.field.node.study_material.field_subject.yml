@@ -1,0 +1,29 @@
+uuid: 8fe6b2b4-9001-4a5b-88a8-8ce22800fbb8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subject
+    - node.type.study_material
+    - taxonomy.vocabulary.subject
+id: node.study_material.field_subject
+field_name: field_subject
+entity_type: node
+bundle: study_material
+label: Subject
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      subject: subject
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

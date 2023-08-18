@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.video.body
     - field.field.node.video.field_stream_name
+    - field.field.node.video.field_subject_video
     - field.field.node.video.field_video_file
     - node.type.video
   module:
@@ -35,6 +36,16 @@ content:
   field_stream_name:
     type: entity_reference_autocomplete
     weight: 123
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_subject_video:
+    type: entity_reference_autocomplete
+    weight: 124
     region: content
     settings:
       match_operator: CONTAINS

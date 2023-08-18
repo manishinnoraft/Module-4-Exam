@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.assignment.body
     - field.field.node.assignment.field_attached_file
     - field.field.node.assignment.field_stream_name_2
+    - field.field.node.assignment.field_subject_assignment
     - node.type.assignment
   module:
     - file
@@ -38,6 +39,14 @@ content:
       link: true
     third_party_settings: {  }
     weight: 103
+    region: content
+  field_subject_assignment:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
     region: content
   links:
     settings: {  }

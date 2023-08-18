@@ -18,3 +18,4 @@ mo_auth_enable_two_factor: true
 txId_Value: EMPTY_VALUE
 'mo_auth_2fa_Success/Error message': null
 'mo_auth_2fa_Success/Error status': null
+mo_user_management_pages: '10'

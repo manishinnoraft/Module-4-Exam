@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.assignment.body
     - field.field.node.assignment.field_attached_file
     - field.field.node.assignment.field_stream_name_2
+    - field.field.node.assignment.field_subject_assignment
     - node.type.assignment
   module:
     - text
@@ -32,3 +33,4 @@ content:
 hidden:
   field_attached_file: true
   field_stream_name_2: true
+  field_subject_assignment: true

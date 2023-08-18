@@ -3,7 +3,7 @@
 /**
  * Implements hook_mail().
  */
-function custom_form_mail($key, &$message, $params) {
+function custom_signupform_mail($key, &$message, $params) {
   switch ($key) {
     case 'student_registration':
       $message['subject'] = Drupal::translation()->translate('Student Registration');

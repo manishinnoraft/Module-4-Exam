@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.assignment.body
     - field.field.node.assignment.field_attached_file
     - field.field.node.assignment.field_stream_name_2
+    - field.field.node.assignment.field_subject_assignment
     - node.type.assignment
   module:
     - file
@@ -42,6 +43,16 @@ content:
   field_stream_name_2:
     type: entity_reference_autocomplete
     weight: 123
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_subject_assignment:
+    type: entity_reference_autocomplete
+    weight: 124
     region: content
     settings:
       match_operator: CONTAINS

@@ -1,0 +1,60 @@
+<?php
+
+/**
+ * Implements hook_cron().
+ */
+function custom_data_cleanup_cron() {
+  custom_data_cleanup_delete_expired_notices();
+}
+
+/**
+ * Function to delete expired notices.
+ */
+function custom_data_cleanup_delete_expired_notices() {
+  $current_date = strtotime("2023-08-17");
+  $query = \Drupal::database()->select('node_field_data', 'n')
+    ->fields('n', ['nid'])
+    ->condition('n.created', $current_date, '<')
+    ->condition('n.type', 'notice')
+    ->execute();
+
+  foreach ($query as $row) {
+    $node = \Drupal\node\Entity\Node::load($row->nid);
+    if ($node) {
+      $node->delete();
+    }
+  }
+}
+
+/**
+ * Implements hook_cron().
+ */
+function custom_cron_cleanup_cron() {
+    $time_threshold = strtotime('-1 week');
+    
+    // Load user accounts created less than 1 week ago.
+    $query = \Drupal::entityQuery('user')
+      ->condition('created', $time_threshold, '>');
+    $uids = $query->execute();
+    
+    // Delete the user accounts.
+    foreach ($uids as $uid) {
+      $user = \Drupal\user\Entity\User::load($uid);
+      if ($user) {
+        try {
+            $user->delete();
+            \Drupal::logger('custom_cron_cleanup')->notice('Deleted user account @username created on @created.', [
+              '@username' => $user->getAccountName(),
+              '@created' => \Drupal::service('date.formatter')->format($user->getCreatedTime()),
+            ]);
+          } catch (\Exception $e) {
+            \Drupal::logger('custom_cron_cleanup')->error('Error deleting user account @username: @error', [
+              '@username' => $user->getAccountName(),
+              '@error' => $e->getMessage(),
+            ]);
+          }
+          
+      }
+    }
+  }
+  
