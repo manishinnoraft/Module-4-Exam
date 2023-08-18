@@ -1,0 +1,7 @@
+student_signup.student_signup:
+  path: '/student-signup'
+  defaults:
+    _form: '\Drupal\student_signup\Form\StudentSignUpForm'
+    _title: 'Student Sign-Up'
+  requirements:
+    _permission: 'access content'

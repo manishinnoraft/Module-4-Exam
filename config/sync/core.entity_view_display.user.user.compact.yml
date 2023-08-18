@@ -1,0 +1,25 @@
+uuid: e95758e2-294a-4dbb-8cde-eb73294b4f99
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.compact
+    - field.field.user.user.field_phone_number
+    - field.field.user.user.field_stream
+    - field.field.user.user.field_year_of_joining
+    - field.field.user.user.field_year_of_passing
+  module:
+    - user
+_core:
+  default_config_hash: 00zr_RBdTjPjBGITD3h4c1ESQZimjdVCcHGt1trLqIY
+id: user.user.compact
+targetEntityType: user
+bundle: user
+mode: compact
+content: {  }
+hidden:
+  field_phone_number: true
+  field_stream: true
+  field_year_of_joining: true
+  field_year_of_passing: true
+  member_for: true

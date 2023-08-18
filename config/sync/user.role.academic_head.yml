@@ -1,0 +1,27 @@
+uuid: 1e08900b-152c-4cc8-a337-6401ef1f9034
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.study_material
+    - node.type.video
+  module:
+    - node
+    - taxonomy
+id: academic_head
+label: 'Academic Head'
+weight: 5
+is_admin: null
+permissions:
+  - 'access taxonomy overview'
+  - 'create study_material content'
+  - 'create video content'
+  - 'delete any study_material content'
+  - 'delete any video content'
+  - 'delete own study_material content'
+  - 'delete own video content'
+  - 'edit any study_material content'
+  - 'edit any video content'
+  - 'edit own study_material content'
+  - 'edit own video content'
+  - 'view study_material revisions'

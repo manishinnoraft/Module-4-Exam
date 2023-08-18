@@ -1,0 +1,13 @@
+_core:
+  default_config_hash: 7LkiviGITIpniIOOIzpuxR7r4XzqqYN_cwu0fb0kx1M
+content_access_roles_gids:
+  anonymous: 1
+  authenticated: 2
+  content_editor: 3
+  administrator: 4
+  students: 5
+  academic_head: 6
+content_access_node_type:
+  notice: 'a:2:{s:8:"view_own";a:1:{i:0;s:13:"administrator";}s:4:"view";a:3:{i:0;s:8:"students";i:1;s:13:"academic_head";i:2;s:13:"administrator";}}'
+  study_material: 'a:2:{s:8:"view_own";a:3:{i:0;s:13:"authenticated";i:1;s:13:"academic_head";i:2;s:13:"administrator";}s:4:"view";a:4:{i:0;s:13:"authenticated";i:1;s:8:"students";i:2;s:13:"academic_head";i:3;s:13:"administrator";}}'
+  video: 'a:2:{s:8:"view_own";a:4:{i:0;s:9:"anonymous";i:1;s:13:"authenticated";i:2;s:13:"academic_head";i:3;s:13:"administrator";}s:4:"view";a:4:{i:0;s:9:"anonymous";i:1;s:13:"authenticated";i:2;s:13:"academic_head";i:3;s:13:"administrator";}}'

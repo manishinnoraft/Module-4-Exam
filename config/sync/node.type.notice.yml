@@ -1,0 +1,18 @@
+uuid: 4c22175a-693a-40ee-8fa4-8eb3246479b9
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Notice
+type: notice
+description: 'Content Type of Notice'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

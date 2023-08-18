@@ -1,0 +1,21 @@
+mo_auth_enable_backdoor: 1
+mo_auth_custom_organization_name: login
+mo_auth_rba_duration: 3
+rba_allowed_devices: 1
+mo_auth_customer_admin_email: manishroyal02@gmail.com
+mo_auth_customer_admin_phone: null
+mo_auth_customer_admin_password: admin
+mo_auth_status: PLUGIN_CONFIGURATION
+mo_auth_customer_id: 322300
+mo_auth_customer_api_key: wNtGGgc9dHmIR5f7hpLnobc224eEiChp
+mo_auth_customer_token_key: G471cxsv4jZVwNgg
+mo_auth_customer_app_secret: v8N9DqK3zPVsgWy6
+mo_auth_firstuser_id: '1'
+mo_auth_2fa_license_type: DEMO
+mo_auth_2fa_license_plan: DEMO
+mo_auth_2fa_license_no_of_users: 1
+mo_auth_enable_two_factor: true
+txId_Value: EMPTY_VALUE
+'mo_auth_2fa_Success/Error message': null
+'mo_auth_2fa_Success/Error status': null
+mo_user_management_pages: '10'

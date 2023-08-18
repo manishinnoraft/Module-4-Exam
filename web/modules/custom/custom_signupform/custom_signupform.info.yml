@@ -1,0 +1,5 @@
+name: 'Custom Sign Up Form'
+type: module
+description: 'This is a custom user Registeration Form'
+core_version_requirement: ^9 || ^10
+package: custom

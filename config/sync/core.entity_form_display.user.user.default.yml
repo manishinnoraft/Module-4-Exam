@@ -1,0 +1,66 @@
+uuid: 1f01e6e0-281f-4a8e-b09a-703fa6badcd3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_phone_number
+    - field.field.user.user.field_stream
+    - field.field.user.user.field_year_of_joining
+    - field.field.user.user.field_year_of_passing
+  module:
+    - phone_number
+    - user
+_core:
+  default_config_hash: FaQ9Ptcpxpg30AtiqRDtl_8zbJArHP1LPfug_s59TOA
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: -10
+    region: content
+  contact:
+    weight: 5
+    region: content
+  field_phone_number:
+    type: phone_number_default
+    weight: 8
+    region: content
+    settings:
+      default_country: US
+      placeholder: null
+      phone_size: 60
+      extension_size: 5
+    third_party_settings: {  }
+  field_stream:
+    type: entity_reference_autocomplete
+    weight: 7
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_year_of_joining:
+    type: number
+    weight: 9
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_year_of_passing:
+    type: number
+    weight: 10
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  language:
+    weight: 0
+    region: content
+  timezone:
+    weight: 6
+    region: content
+hidden: {  }

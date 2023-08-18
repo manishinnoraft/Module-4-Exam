@@ -1,0 +1,5 @@
+name: 'Custom Data Cleanup'
+type: module
+description: 'This is a module that will delete notices and user based on specific time'
+core_version_requirement: ^9 || ^10
+package: custom

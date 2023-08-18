@@ -1,0 +1,36 @@
+uuid: 9e9395da-5548-4606-b97b-8d447928fbb9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.assignment.body
+    - field.field.node.assignment.field_attached_file
+    - field.field.node.assignment.field_stream_name_2
+    - field.field.node.assignment.field_subject_assignment
+    - node.type.assignment
+  module:
+    - text
+    - user
+id: node.assignment.teaser
+targetEntityType: node
+bundle: assignment
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_attached_file: true
+  field_stream_name_2: true
+  field_subject_assignment: true

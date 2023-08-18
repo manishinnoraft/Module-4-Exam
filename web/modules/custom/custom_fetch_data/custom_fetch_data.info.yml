@@ -1,0 +1,5 @@
+name: 'Fetch Data API Module'
+type: module
+description: 'It fetches the data from the site.'
+package: Custom
+core_version_requirement: ^9 || ^10

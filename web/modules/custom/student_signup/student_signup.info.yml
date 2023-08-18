@@ -1,0 +1,7 @@
+name: 'Student Signup'
+type: module
+description: 'Allows students to sign up and sends notifications.'
+core_version_requirement: ^9 || ^10
+package: Custom
+dependencies:
+  - drupal:mailsystem

@@ -1,0 +1,29 @@
+uuid: af929bf5-5ba9-4aad-9e40-2d9ca96af98e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subject_assignment
+    - node.type.assignment
+    - taxonomy.vocabulary.subject
+id: node.assignment.field_subject_assignment
+field_name: field_subject_assignment
+entity_type: node
+bundle: assignment
+label: Subject
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      subject: subject
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

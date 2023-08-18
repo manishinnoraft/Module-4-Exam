@@ -1,0 +1,30 @@
+<?php
+
+use Drupal\Core\Mail\MailManagerInterface;
+use Drupal\Core\Mail\Plugin\Mail\PhpMail;
+use Symfony\Component\DependencyInjection\ContainerInterface;
+
+/**
+ * Implements hook_mail().
+ */
+function student_signup_mail($key, &$message, $params) {
+  // Define mail subject and body based on the $key.
+  switch ($key) {
+    case 'student_notification':
+      $message['subject'] = ('Welcome to Our University');
+      $message['body'][] = ('Dear Student, you have successfully signed up');
+      break;
+
+    case 'admin_notification':
+      $message['subject'] = ('New Student Sign-Up');
+      $message['body'][] = ('A new student has signed up: @name');
+      break;
+  }
+}
+
+/**
+ * Implements hook_mail_alter().
+ */
+function student_signup_mail_alter(array &$message) {
+  // You can customize email headers or other properties here.
+}

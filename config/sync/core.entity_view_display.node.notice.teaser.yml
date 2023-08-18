@@ -1,0 +1,22 @@
+uuid: 7707634f-0472-4084-af88-8fcb803164b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.notice.field_notice_body
+    - node.type.notice
+  module:
+    - user
+id: node.notice.teaser
+targetEntityType: node
+bundle: notice
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_notice_body: true

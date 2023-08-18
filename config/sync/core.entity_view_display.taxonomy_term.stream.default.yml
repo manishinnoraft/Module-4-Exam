@@ -1,0 +1,22 @@
+uuid: afa885f4-7321-472b-9042-6b2cb4df2ecb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.stream.field_choose_subject
+    - taxonomy.vocabulary.stream
+id: taxonomy_term.stream.default
+targetEntityType: taxonomy_term
+bundle: stream
+mode: default
+content:
+  field_choose_subject:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  description: true
